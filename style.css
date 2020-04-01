@@ -45,10 +45,18 @@ img {
   margin-bottom: 1.125rem;
 }
 
+.form__control.form__control--error > input {
+  border: 1px solid red;
+}
+
 .form__input {
   padding: 0.65rem 2rem;
   border: 1px solid hsl(223, 100%, 88%);
   border-radius: 25px;
+}
+
+.form__control.form__control--error > .form__input {
+  border: 1px solid red;
 }
 
 .form__input:focus {
@@ -59,6 +67,11 @@ img {
   font-size: 0.65rem;
   color: red;
   margin-top: 0.25rem;
+  visibility: hidden;
+}
+
+.form__control.form__control--error > .form__error {
+  visibility: visible;
 }
 
 .btn {
