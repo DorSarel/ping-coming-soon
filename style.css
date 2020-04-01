@@ -65,6 +65,7 @@ img {
   padding: 0.65rem;
   border: 0;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -73,6 +74,11 @@ img {
   font-size: 0.75rem;
   font-weight: 600;
   font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
 }
 
 /* Subscribe */
@@ -92,7 +98,7 @@ img {
 
 .subscribe__subtitle {
   font-size: 0.85rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Footer */
@@ -130,4 +136,35 @@ img {
 .footer__text {
   font-size: 0.75rem;
   color: hsl(0, 0%, 59%);
+}
+
+@media only screen and (min-width: 30rem) {
+  .form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2.5rem;
+  }
+
+  .form__control {
+    width: 60%;
+    margin-right: 1rem;
+  }
+
+  .form__error {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.75rem;
+  }
+
+  .subscribe__title {
+    font-size: 2rem;
+  }
+
+  .subscribe__subtitle {
+    font-size: 1rem;
+  }
 }
