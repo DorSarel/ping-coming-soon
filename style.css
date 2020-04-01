@@ -29,6 +29,7 @@ img {
   width: 90%;
   max-width: 900px;
   margin: 5rem auto;
+  padding: 0 0.5rem;
 }
 
 /* General */
@@ -41,7 +42,7 @@ img {
 .form__control {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.125rem;
 }
 
 .form__input {
@@ -92,4 +93,41 @@ img {
 .subscribe__subtitle {
   font-size: 0.85rem;
   margin-bottom: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  padding: 2rem;
+}
+
+.social-links {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links__link:link,
+.social-links__link:visited {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 1.125rem;
+  padding: 0.5rem 0.75rem;
+  color: hsl(223, 87%, 63%);
+  transition: all 0.25s;
+}
+
+.social-links__link:hover,
+.social-links__link:active {
+  color: hsl(223, 87%, 50%);
+}
+
+.footer__text {
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 59%);
 }
